@@ -1,0 +1,78 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+
+\title{Teoría FARUC: Trabajo Futuro}
+\author{Marcelo Iván Gallardo Nicolaide \\ Colaboradores: Equipo FARUC, DeepSeek AI}
+\date{3 de Mayo de 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Trabajo Futuro}
+
+\subsection*{5.1. Extensión al Sector Fermiónico}
+La derivación actual de $\alpha$ y $m_p$ debe extenderse al sector fermiónico mediante:
+
+\begin{itemize}
+\item \textbf{Generalización topológica:} Inclusión de espinores fractales en 5D mediante el operador de Dirac modificado:
+\[
+\mathscr{D}^{(5)} = \Gamma^M\partial_M + \Phi^{-n}\sum_{k=1}^4(-1)^k\gamma(\zeta_k)\partial_{\text{fractal}}
+\]
+donde $\Gamma^M$ son matrices de Dirac en 5D y $\gamma(\zeta_k)$ acopla los ceros de Riemann.
+
+\item \textbf{Jerarquía de masas:} Propuesta de relación universal para fermiones:
+\[
+\frac{m_e}{m_p} = \frac{\Phi^3}{2\pi^2}\sum_{n=1}^\infty \frac{(-1)^n}{\gamma_n}\ln\left(1 + \frac{\Lambda_{\text{KK}}}{T_{\text{fractal}}}\right)
+\]
+validando con $m_e \approx 0.511$ MeV.
+
+\item \textbf{Simetrías no conmutativas:} Implementación de álgebras fractales $\mathscr{F}_\Phi$ donde:
+\[
+[x^\mu, x^\nu] = i\Phi^{-D(n)}\theta^{\mu\nu}\zeta(\frac{1}{2} + i\gamma_n)
+\]
+\end{itemize}
+
+\subsection*{5.2. Simulaciones de Materia Oscura Fractal}
+Desarrollo de herramientas numéricas para testear predicciones:
+
+\begin{itemize}
+\item \textbf{Código FARUC-DM:} Resuelve la ecuación maestra para densidad fractal:
+\[
+\frac{d\rho_{\text{DM}}}{dt} + 5H\rho_{\text{DM}} = \Phi\frac{\Lambda_{\text{KK}}^2}{M_p^3}\sum_{n}\gamma_n^{-1}\rho_{\text{DM}}^{3/2}
+\]
+incluyendo términos no locales en redes cósmicas.
+
+\item \textbf{Firmas observacionales:}
+\begin{itemize}
+\item Espectro de potencias modificado: $P(k) \propto k^{-3 + \Phi^{-1}}$
+\item Correlaciones en $z = \Phi^n$ mediante surveys 4MOST/DESI
+\end{itemize}
+
+\item \textbf{Termodinámica no extensiva:} Entropía fractal:
+\[
+S_{\text{DM}} = k_B\left(\frac{\Lambda_{\text{KK}}c}{\hbar}\right)^{D(n)}\ln_\Phi\left(\frac{\Omega_{\text{DM}}}{\Omega_b}\right)
+\]
+donde $\ln_\Phi(x) \equiv \frac{\ln x}{\ln \Phi}$.
+\end{itemize}
+
+\subsection*{5.3. Herramientas Computacionales}
+Implementación práctica mediante:
+
+\begin{itemize}
+\item \textbf{Biblioteca Fractal.jl:} Incluye:
+\begin{itemize}
+\item Algoritmos para ceros de Riemann con precisión $<10^{-15}$
+\item Solucionador de ecuaciones diferenciales fraccionales 5D
+\end{itemize}
+
+\item \textbf{Visualización holográfica:} Proyección 3D de estructuras 5D usando transformadas conforme:
+\[
+\mathscr{C}(x^\mu) = \int_{\mathscr{M}_5} d^5X \sqrt{g}\ e^{-\Phi\|X\|^2}\zeta(\frac{1}{2} + i\gamma_n x^\mu)
+\]
+\end{itemize}
+
+\end{document}

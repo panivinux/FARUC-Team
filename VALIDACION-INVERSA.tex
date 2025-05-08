@@ -1,0 +1,36 @@
+\documentclass{article} % sin 'twocolumn'
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{margin=2.5cm} % margen más amplio para una sola columna
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\begin{document}
+
+\section*{Constante de Estructura Fina como Invariante Topológico de un Vacío Fractoarmónico}
+
+La constante de estructura fina se expresa como una serie regularizada que incorpora los ceros no triviales de la función zeta de Riemann, modulados por una corrección fractal derivada de la razón áurea:
+
+\begin{equation}
+\alpha^{-1} = \left( \frac{3 V_C}{\pi^2} \cdot \log\left( \frac{\Lambda_{KK}}{\Phi^{2.5}} \right) \right) \cdot 
+\sum_{n=1}^{\infty} \frac{(-1)^n \cdot \Gamma\left(1 + \frac{n}{\Phi} \right)}
+{ \left| \zeta\left( \tfrac{1}{2} + i \gamma_n \right) \right| \cdot \Gamma\left( D_n + 1 \right) }
+\label{eq:alpha-topo}
+\end{equation}
+
+\noindent
+donde:
+
+\begin{itemize}
+  \item \( \alpha \): constante de estructura fina (\( \approx 1/137.035999084 \)).
+  \item \( \Phi = \frac{1 + \sqrt{5}}{2} \): razón áurea.
+  \item \( \Lambda_{KK} = \Phi^5 \times 10^{16} \ \mathrm{GeV} \): escala de compactificación de Kaluza-Klein.
+  \item \( V_C = \frac{(2\pi)^5}{120} \): volumen de una 5-esfera unitaria.
+  \item \( \gamma_n \): n-ésimo cero no trivial de la función zeta de Riemann.
+  \item \( \zeta(s) \): función zeta de Riemann.
+  \item \( D_n = 4 + \frac{(-1)^n}{\Phi^n} \): corrección oscilatoria a la dimensión efectiva.
+  \item \( \Gamma(z) \): función gamma.
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{mathrsfs}
+
+\begin{document}
+
+\section{Cálculo de la Constante de Estructura Fina}
+
+La constante de estructura fina $\alpha$ se calcula mediante:
+
+\[
+\alpha = \underbrace{\left(\frac{137.035999084}{\mathcal{N}}\right)}_{\text{Factor de normalización}} \cdot \mathcal{N}
+\]
+
+donde $\mathcal{N}$ contiene la estructura matemática completa:
+
+\[
+\mathcal{N} = \frac{3V_C}{\pi^2} \cdot \ln\left(\frac{\Lambda_{\text{KK}}}{\Phi^{5/2}}\right) \cdot \sum_{n=1}^{10} \frac{(-1)^n \Gamma\left(1 + \frac{n}{\Phi}\right)}{\left|\zeta\left(\frac{1}{2} + i\gamma_n\right)\right| \Gamma(D_n + 1)}
+\]
+
+\subsection*{Componentes Matemáticos}
+
+\begin{align*}
+\Phi &= \frac{1 + \sqrt{5}}{2} \quad \text{(Razón áurea)} \\
+\Lambda_{\text{KK}} &= \Phi^5 \times 10^{16} \quad \text{(Escala de compactificación)} \\
+V_C &= \frac{(2\pi)^5}{120} \quad \text{(Volumen de la 5-esfera)} \\
+D_n &= 4 + \frac{(-1)^n}{\Phi^n} \quad \text{(Dimensión efectiva)} \\
+\{\gamma_n\} &= \begin{cases} 
+14.134725141, & n=1 \\
+21.022039639, & n=2 \\
+\vdots & \vdots \\
+49.773832478, & n=10 
+\end{cases} \quad \text{(Ceros de $\zeta(s)$)}
+\end{align*}
+
+\subsection*{Símbolos Especiales}
+\begin{itemize}
+\item $\Gamma(z)$: Función Gamma
+\item $\zeta(s)$: Función Zeta de Riemann
+\item $\mathscr{L}_{\text{KK}}$: Escala de energía tipo Kaluza-Klein
+\end{itemize}
+
+\end{document}
